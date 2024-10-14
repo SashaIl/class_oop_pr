@@ -1,6 +1,7 @@
 ﻿#include <iostream>
 #include "Car.h"
 #include "Student.h"
+#include "Dot.h"
 
 using namespace std;
 
@@ -21,10 +22,10 @@ int main()
     //c1.showCar();
     //c2.showCar();
 
-
+    // EX 1 //
     Student student;
     
-    char* name = new char[20];
+    /*char* name = new char[20];
     char* surname = new char[20];
     char* middle_name = new char[20];
     
@@ -80,5 +81,15 @@ int main()
     delete[] country_educational_institution;
     delete[] country;
     delete[] city;
-    delete[] numer;
+    delete[] numer;*/
+
+
+    // EX 2 //
+    Dot d;
+
+    d.setDotX(1, 2, 3);
+    d.setDotY(0, 0, 0);
+    d.setDotZ(5, 5, 5);
+    d.show_information();
+    d.save_to_file();
 }
