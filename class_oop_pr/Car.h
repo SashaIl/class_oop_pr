@@ -7,7 +7,13 @@ class Car
 	string mark;
 	string model;
 	int yearCreate;
+	int* mas;
+	char* s;
 public:
+	Car();
+	Car(string ma, string mo, int year);
+	Car(string ma, string mo, int year,char* s1);
+
 	void showCar();
 	string getModel();
 	string getMark();
@@ -17,5 +23,6 @@ public:
 	void setMark(string m);
 	void setYear(int m);
 
+	~Car();
 };
 

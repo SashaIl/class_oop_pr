@@ -9,7 +9,9 @@ int main()
 {
     std::cout << "Hello World!\n";
 
-    Car c1, c2;
+    //Car c1("qwer","bbb",2024), 
+    //    c2,
+    //    c3("wert", "qwer", 1026, (char*)"qwerty");
 
     //c1.setMark("BMW");
     //c1.setModel("x5");
@@ -21,6 +23,7 @@ int main()
 
     //c1.showCar();
     //c2.showCar();
+    //c3.showCar();
 
     // EX 1 //
     Student student;
@@ -85,11 +88,15 @@ int main()
 
 
     // EX 2 //
-    Dot d;
+    Dot d1,
+        //d2(1,2,3,3,3,3),
+        d3(1.0,2,3,4,1,2);
 
-    d.setDotX(1, 2, 3);
+   /* d.setDotX(1, 2, 3);
     d.setDotY(0, 0, 0);
     d.setDotZ(5, 5, 5);
-    d.show_information();
-    d.save_to_file();
+    d.save_to_file();*/
+    d1.show_information();
+    //d2.show_information();
+    d3.show_information();
 }

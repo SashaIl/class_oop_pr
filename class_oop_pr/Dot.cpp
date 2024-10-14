@@ -2,21 +2,72 @@
 using namespace std;
 
 
+Dot::Dot() {
+	Dot_x = new double[3];
+	Dot_y = new double[3];
+	Dot_z = new double[3];
+	for (int i = 0; i < 3; i++) {
+		Dot_x[i] = 0;
+		Dot_y[i] = 0;
+		Dot_z[i] = 0;
+	}
+}
+Dot::Dot(double x1, double x2, double x3, double y1, double y2,double y3) {
+	Dot_x = new double[3];
+	Dot_y = new double[3];
+	Dot_z = new double[3];
+	
+	Dot_x[0] = x1;
+	Dot_x[1] = x2;
+	Dot_x[2] = x3;
+
+
+	Dot_y[0] = y1;
+	Dot_y[1] = y2;
+	Dot_y[2] = y3;
+
+	Dot_z[0] = 0;
+	Dot_z[1] = 0;
+	Dot_z[2] = 0;
+
+}
+Dot::Dot(double x1, double x2, double x3, double y1, double y2, double y3, double z1, double z2, double z3) {
+	Dot_x = new double[3];
+	Dot_y = new double[3];
+	Dot_z = new double[3];
+
+	Dot_x[0] = x1;
+	Dot_x[1] = x2;
+	Dot_x[2] = x3;
+
+
+	Dot_y[0] = y1;
+	Dot_y[1] = y2;
+	Dot_x[2] = y3;
+
+	Dot_z[0] = z1;
+	Dot_z[1] = z2;
+	Dot_z[2] = z3;
+}
+
+
+
+
 // SET //
 
-void Dot::setDotX(int x, int y, int z) {
+void Dot::setDotX(double x, double y, double z) {
 	Dot_x[0] = x;
 	Dot_x[1] = y;
 	Dot_x[2] = z;
 }
 
-void Dot::setDotY(int x, int y, int z) {
+void Dot::setDotY(double x, double y, double z) {
 	Dot_y[0] = x;
 	Dot_y[1] = y;
 	Dot_y[2] = z;
 }
 
-void Dot::setDotZ(int x, int y, int z) {
+void Dot::setDotZ(double x, double y, double z) {
 	Dot_z[0] = x;
 	Dot_z[1] = y;
 	Dot_z[2] = z;
