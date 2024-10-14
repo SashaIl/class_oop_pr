@@ -47,6 +47,7 @@ class Student
 public:
 
 	~Student();
+	Student();
 	void Show_all();
 
 

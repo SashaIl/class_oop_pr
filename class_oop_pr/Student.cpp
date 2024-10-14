@@ -126,13 +126,32 @@ char* Student::GetCountry() {
 	return info.country;
 }
 void Student:: Show_all() {
+	cout << "\n\n";
 	cout << "student name: " << name.name << " " << name.surname << " " << name.middle_name << endl;
 	cout << "group number: " << inst.num_group << endl;
-	cout << "birthday :" << birth.day_birthday << " " << birth.month_birthday << " " << birth.year_birthday << endl;
+	cout << "birthday :" << birth.day_birthday << " " << birth.month_birthday << " " << birth.year_birthday<< " (dd.mm.yyyy)" << endl;
 	cout  << "country - " << info.country << "\ncity - " << info.city << "\ntelefone - " << info.numer << endl;
 	cout << "name educational institution: " << inst.name_educational_institution << endl;
 	cout << "country educational institution: " << inst.country_educational_institution << endl;
 	cout << "city educational institution: " << inst.city_educational_institution << endl;
+}
+
+
+Student::Student() {
+	strcpy_s(name.name, 20, "nnnnnnnnnn");
+	strcpy_s(name.surname, 20, "ssssssssss");
+	strcpy_s(name.middle_name, 20, "mmmmmmmmmm");
+
+	inst.num_group = 0;
+	birth.day_birthday = 1;
+	birth.month_birthday = 1;
+	birth.year_birthday = 1999;
+	strcpy_s(info.country, 20, "cccccccccc");
+	strcpy_s(info.city, 20, "cccccccccc");
+	strcpy_s(info.numer, 16, "123456789");
+	strcpy_s(inst.name_educational_institution, 20, "uuuuuuuuuu");
+	strcpy_s(inst.country_educational_institution, 20, "cccccccccc");
+	strcpy_s(inst.city_educational_institution, 20, "cccccccccc");
 }
 
 Student::~Student() {
