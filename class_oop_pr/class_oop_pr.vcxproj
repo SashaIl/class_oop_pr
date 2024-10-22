@@ -130,11 +130,13 @@
     <ClCompile Include="Car.cpp" />
     <ClCompile Include="class_oop_pr.cpp" />
     <ClCompile Include="Dot.cpp" />
+    <ClCompile Include="fraction.cpp" />
     <ClCompile Include="Student.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Car.h" />
     <ClInclude Include="Dot.h" />
+    <ClInclude Include="fraction.h" />
     <ClInclude Include="Student.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

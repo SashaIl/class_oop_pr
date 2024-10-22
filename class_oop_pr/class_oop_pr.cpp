@@ -2,6 +2,7 @@
 #include "Car.h"
 #include "Student.h"
 #include "Dot.h"
+#include "fraction.h"
 
 using namespace std;
 
@@ -26,8 +27,11 @@ int main()
     //c3.showCar();
 
     // EX 1 //
-   Student student, student2;
-    
+    !!!!!!!!!!!!!!!!!!!
+   Student student;
+   student.Show_all();
+   !!!!!!!!!!!!!!!!!!!!!! 
+
     //char* name = new char[20];
     //char* surname = new char[20];
     //char* middle_name = new char[20];
@@ -75,7 +79,7 @@ int main()
     //student.SetCity_educational_institution(city_educational_institution);
 
     //student.Show_all();
-    student2.Show_all();
+    //student2.Show_all();
 
     //delete[] name;
     //delete[] surname;
@@ -87,10 +91,23 @@ int main()
     //delete[] city;
     //delete[] numer;
 
+    // EX 2//
+   !!!!!!!!!!!!!!!!!!!!!!!
+    Fraction f1,
+        f2(1, 0);
+    f1.print();
+    f2.print();
+    cout << "\n" << Fraction::get_count();
+    !!!!!!!!!!!!!!!!!!!!
 
-    // EX 2 //
-    //Dot d1,
-    //    d3(1.0,2,3,4,1,2);
+    // EX 3 //
+    !!!!!!!!!!!!!!!!
+   Dot d1,d2(1,2);
+   d1.show_information();
+   d2.show_information();
+   cout << Dot::get_count();
+    !!!!!!!!!!!!!!!!!!
+
 
    /* d.setDotX(1, 2, 3);
     d.setDotY(0, 0, 0);
@@ -99,4 +116,5 @@ int main()
     //d1.show_information();
     //d2.show_information();
     //d3.show_information();
+
 }
